@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: wheat;
+    width: 100vw;
+    height: 100vh;
+    padding: 1%;
+    display: grid;
+    grid-template-areas: "i1 i1 i1"
+                         "i1 i1 i1"
+                         "i1 i1 i1";
+                         place-items: stretch;
+
+    gap: 5%;
+}
+.item{
+    /* grid-area: i1; */
+    /* width: 30%;
+    height: 30%; */
+    background-color: black;
+    gap: 2%;
+    row-gap: 5%;
+    padding: 3%;
+    display: grid;
+    /* grid-template-columns: auto;
+    grid-template-rows: .5fr 2fr 2fr;*/
+    /* grid-template-columns: repeat(24,1fr); */
+
+    grid-template-rows: .4fr 3fr 3fr;
+    grid-template-columns: repeat(24,1fr);
+
+    /* grid-template-areas: "c1 c2 c3"
+                         "b1 b2 b3"
+                         "b4 b5 b6"
+                         "b7 b7 b7"; */
+}
+#circle1{
+    grid-area: c1;
+    background-color: red;
+    border-radius: 100%;
+    /* width: 15%;
+    height: 50%; */
+    grid-row: 1;
+    grid-column: 1;
+}
+#circle2{
+    grid-area: c2;
+    background-color: rgb(255, 98, 0);
+    border-radius: 100%;
+    grid-row: 1;
+    grid-column: 2;
+}
+#circle3{
+    grid-area: c3;
+    background-color: rgb(255, 132, 0);
+    border-radius: 100%; 
+    grid-row: 1;
+    grid-column: 3;
+}
+#box1{
+    grid-area: b1;
+    background-color: white;
+    grid-row: 1;
+    grid-column: 4/27;
+}
+#box2{
+    grid-area: b2;
+    background-color: rgb(245, 21, 13);
+    grid-row: 2;
+    grid-column: 1/9;
+}
+#box3{
+    grid-area: b3;
+    background-color: rgba(249, 143, 5, 0.966);
+    grid-row: 2;
+    grid-column: 9/18;
+}
+#box4{
+    grid-area: b4;
+    background-color: rgb(253, 224, 6);
+    grid-row: 2;
+    grid-column: 18/27;
+}
+#box5{
+    grid-area: b5;
+    background-color: rgba(109, 249, 9, 0.39);
+    grid-row: 3;
+    grid-column: 1/9;
+}
+#box6{
+    grid-area: b6;
+    background-color: rgba(88, 247, 15, 0.818);
+    grid-row: 3;
+    grid-column: 9/18;
+}
+#box7{
+    grid-area: b7;
+    background-color: rgb(11, 116, 245);
+    grid-row: 3;
+    grid-column: 18/27;
+}
+
+/* Item 2 */
+
+.item2{
+    background-color: black;
+    gap: 2%;
+    row-gap: 5%;
+    padding: 3%;
+    display: grid;
+
+    grid-template-rows: .4fr 3fr 3fr;
+    grid-template-columns: repeat(24,1fr);
+
+    #circle1{
+        grid-area: c1;
+        background-color: red;
+        border-radius: 100%;
+        /* width: 15%;
+        height: 50%; */
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #circle2{
+        grid-area: c2;
+        background-color: rgb(255, 98, 0);
+        border-radius: 100%;
+        grid-row: 1;
+        grid-column: 2;
+    }
+    #circle3{
+        grid-area: c3;
+        background-color: rgb(255, 132, 0);
+        border-radius: 100%; 
+        grid-row: 1;
+        grid-column: 3;
+    }
+    #box1{
+        grid-area: b1;
+        background-color: white;
+        grid-row: 1;
+        grid-column: 4/27;
+    }
+    #box2{
+        grid-area: b2;
+        background-color: rgb(245, 21, 13);
+        grid-row: 2;
+        grid-column: 1/18;
+    }
+    #box4{
+        grid-area: b4;
+        background-color: rgb(253, 224, 6);
+        grid-row: 2/4;
+        grid-column: 18/27;
+    }
+    #box5{
+        grid-area: b5;
+        background-color: rgba(109, 249, 9, 0.39);
+        grid-row: 3;
+        grid-column: 1/9;
+    }
+    #box6{
+        grid-area: b6;
+        background-color: rgba(88, 247, 15, 0.818);
+        grid-row: 3;
+        grid-column: 9/18;
+    }
+}
+
+/* item3 */
+
+.item3{
+    background-color: black;
+    gap: 2%;
+    row-gap: 5%;
+    padding: 3%;
+    display: grid;
+
+    grid-template-rows: .4fr 1.5fr 3fr 1.5fr;
+    grid-template-columns: repeat(24,1fr);
+
+    #circle1{
+        grid-area: c1;
+        background-color: red;
+        border-radius: 100%;
+        /* width: 15%;
+        height: 50%; */
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #circle2{
+        grid-area: c2;
+        background-color: rgb(255, 98, 0);
+        border-radius: 100%;
+        grid-row: 1;
+        grid-column: 2;
+    }
+    #circle3{
+        grid-area: c3;
+        background-color: rgb(255, 132, 0);
+        border-radius: 100%; 
+        grid-row: 1;
+        grid-column: 3;
+    }
+    #box1{
+        grid-area: b1;
+        background-color: white;
+        grid-row: 1;
+        grid-column: 4/27;
+    }
+    #box2{
+        grid-area: b2;
+        background-color: rgb(245, 21, 13);
+        grid-row: 3/4;
+        grid-column: 8/27;
+    }
+    #box4{
+        grid-area: b4;
+        background-color: rgb(253, 224, 6);
+        grid-row: 2;
+        grid-column: 1/27;
+    }
+    #box5{
+        grid-area: b5;
+        background-color: rgba(109, 249, 9, 0.39);
+        grid-row: 3/4;
+        grid-column: 1/8;
+    }
+    #box6{
+        grid-area: b6;
+        background-color: rgba(88, 247, 15, 0.818);
+        grid-row: 4;
+        grid-column: 1/27;
+    }
+}
+
+/* item4 */
+.item4{
+    background-color: black;
+    gap: 2%;
+    row-gap: 5%;
+    padding: 3%;
+    display: grid;
+
+    grid-template-rows: .4fr 2fr 3fr 1fr;
+    grid-template-columns: repeat(24,1fr);
+
+    #circle1{
+        grid-area: c1;
+        background-color: red;
+        border-radius: 100%;
+        /* width: 15%;
+        height: 50%; */
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #circle2{
+        grid-area: c2;
+        background-color: rgb(255, 98, 0);
+        border-radius: 100%;
+        grid-row: 1;
+        grid-column: 2;
+    }
+    #circle3{
+        grid-area: c3;
+        background-color: rgb(255, 132, 0);
+        border-radius: 100%; 
+        grid-row: 1;
+        grid-column: 3;
+    }
+    #box1{
+        grid-area: b1;
+        background-color: white;
+        grid-row: 1;
+        grid-column: 4/27;
+    }
+    #box2{
+        grid-area: b2;
+        background-color: rgb(245, 21, 13);
+        grid-row: 2;
+        grid-column: 13/27;
+    }
+    #box3{
+        grid-area: b3;
+        background-color: rgba(249, 143, 5, 0.966);
+        grid-row: 2;
+        grid-column: 1/13;
+    }
+    #box4{
+        grid-area: b4;
+        background-color: rgb(253, 224, 6);
+        grid-row: 4;
+        grid-column: 1/27;
+    }
+    #box5{
+        grid-area: b5;
+        background-color: rgba(109, 249, 9, 0.39);
+        grid-row: 3;
+        grid-column: 1/9;
+    }
+    #box6{
+        grid-area: b6;
+        background-color: rgba(88, 247, 15, 0.818);
+        grid-row: 3;
+        grid-column: 9/27;
+    }
+}
+
+/* item5
+.item5{
+     background-color: black;
+    gap: 2%;
+    row-gap: 5%;
+    padding: 3%;
+    display: grid;
+
+    grid-template-rows: .4fr 2fr 2fr 2fr;
+    grid-template-columns: repeat(24,1fr);
+    grid-template-areas: "b5 b3 b6 b2 b7 b3"
+                         "b4 b5 b3 b6 b4 b2"
+                         "b5 b2 b7 b3 b5 b7";
+
+    #circle1{
+        grid-area: c1;
+        background-color: red;
+        border-radius: 100%;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #circle2{
+        grid-area: c2;
+        background-color: rgb(255, 98, 0);
+        border-radius: 100%;
+        grid-row: 1;
+        grid-column: 2;
+    }
+    #circle3{
+        grid-area: c3;
+        background-color: rgb(255, 132, 0);
+        border-radius: 100%; 
+        grid-row: 1;
+        grid-column: 3;
+    }
+    #box1{
+        grid-area: b1;
+        background-color: white;
+        grid-row: 1;
+        grid-column: 4/27;
+    }
+    #box2{
+        grid-area: b2;
+        background-color: rgb(245, 21, 13);
+        grid-row: 2,3,4;
+        grid-column: 12/16,20/24,4/8;
+    }
+    #box3{
+        grid-area: b3;
+        background-color: rgba(249, 143, 5, 0.966);
+        grid-row: 2;
+        grid-column: 1/13;
+    }
+    #box4{
+        grid-area: b4;
+        background-color: rgb(253, 224, 6);
+        grid-row: 4;
+        grid-column: 1/27;
+    }
+    #box5{
+        grid-area: b5;
+        background-color: rgba(109, 249, 9, 0.39);
+        grid-row: 3;
+        grid-column: 1/9;
+    }
+    #box6{
+        grid-area: b6;
+        background-color: rgba(88, 247, 15, 0.818);
+        grid-row: 3;
+        grid-column: 9/27;
+    }
+    #box7{
+        grid-area: b7;
+        background-color: rgb(11, 116, 245);
+        grid-row: 3;
+        grid-column: 18/27;
+    } 
+} */
+
+.item5{
+    background-color: black;
+    padding: 3%;
+    /* gap: 5%; */
+
+    nav{
+        /* background-color: pink; */
+        width: 100%;
+        height: 6%;
+        display: flex;
+        gap: 2%;
+
+        #circle1{
+            background-color: red;
+            border-radius: 100%;
+            width: 3%;
+            height: 100%;
+        }
+        #circle2{
+            background-color: rgb(255, 98, 0);
+            border-radius: 100%;
+            width: 3%;
+            height: 100%;
+        }
+        #circle3{
+            background-color: rgb(255, 132, 0);
+            border-radius: 100%; 
+            width: 3%;
+            height: 100%;
+        }
+        #box1{
+            background-color: white;
+            width: 85%;
+            height: 100%;
+        }
+    }
+    section{
+        width: 100%;
+        height: 92%;
+        margin-top: 2%;
+        gap: 2%;
+        /* background-color: pink; */
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(6,1fr);
+
+        /* grid-template-areas: "b5 b3 b6 b2 b7 b3" "b4 b5 b3 b6 b4 b2"  "b5 b2 b7 b3 b5 b7"; */
+        grid-template-areas: "b5 b3 b6 b2 b7" 
+        "b4 b5 b3 b6 b4";
+
+    
+        #box2{
+            grid-area: b2;
+            background-color: rgb(245, 21, 13);
+            /* width: 16%;
+            height: 33%; */
+        }
+        #box3{
+            grid-area: b3;
+            background-color: rgba(249, 143, 5, 0.966);
+            /* width: 16%;
+            height: 33%; */
+        }
+        #box4{
+            grid-area: b4;
+            background-color: rgb(253, 224, 6);
+            /* width: 16%;
+            height: 33%; */
+        }
+        #box5{
+            grid-area: b5;
+            background-color: rgba(109, 249, 9, 0.39));
+            /* width: 16%;
+            height: 33%; */
+        }
+        #box6{
+            grid-area: b6;
+            background-color: rgba(88, 247, 15, 0.818);
+            /* width: 16%;
+            height: 33%; */
+        }
+        #box7{
+            grid-area: b7;
+            background-color: rgb(11, 116, 245);
+            /* width: 16%;
+            height: 33%; */
+        }
+    }
+}
+
+/* item6 */
+.item6{
+    background-color: black;
+    padding: 3%;
+    gap: 5%;
+}
+.item6 nav{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    gap: 2%;
+}
+.item6 nav #circle1,

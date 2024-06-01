@@ -1,0 +1,14 @@
+/* Apply box-sizing property to elements */
+.content-box {
+    box-sizing: content-box; /* Default value */
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.border-box {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* example1 */
+
+        /* .container{
+            background-color: aquamarine;
+            border: 5px solid black;
+            margin: 5px;
+            padding: 5px; 
+            display: flex;
+        }
+        .box{
+            background-color: green;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            padding: 5px;
+        }
+        #box1{
+            background-color: yellow;
+        }
+        #box2{
+            background-color: red;
+        }
+        #box3{
+            background-color: blue;
+        }
+        #box4{
+            background-color: green;
+        }
+        @media(max-width:640px){
+            .container{
+                flex-flow: column;
+            }
+        } 
+        @media(min-width:641px){
+            .container{
+                flex-flow: row;
+            }
+        } */
+
+        /* example2 */
+
+        .container2{
+            border: 2px solid black;
+            display: flex;
+        }
+        .leftbox{
+            margin: 5px;
+            padding: 2px;
+            /* display: flex; */
+        }
+        .rightbox{
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            align-self: center;
+        }
+        p{
+            border: 1px solid black;
+        }
+        
+        @media(max-width:640px){
+            .container2{
+                display: flex;
+                flex-flow: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- example1 -->
+
+    <!-- <div class="container">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+    </div> -->
+    
+    <!-- example2 -->
+
+    <div class="container2">
+
+        <div class="leftbox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quaerat voluptatem sapiente repellendus aut, dolorem vel accusantium nostrum dolorum harum ratione illum modi! Ullam dolorem error obcaecati assumenda consectetur quidem distinctio nihil, fugit cum cupiditate at numquam accusantium repellendus iusto minus veritatis quos quae excepturi officia. Doloremque nam culpa reprehenderit.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eius.</p>
+        </div>
+        
+        <img  class="rightbox" src="image1.jpeg" alt="image1" width="200px" height="200px">
+    </div>
+</body>
+</html>

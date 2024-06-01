@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            border:1px solid black;
+            margin:10px;
+            padding: 10px;
+        } */
+        div{
+            border:1px solid red;
+            margin:10px;
+            padding: 10px;
+        }
+        img{
+            border:1px solid black;
+            margin:8px;
+            padding: 10px;
+            width: 100px;
+            height:100px;
+        }
+        .divclass1{
+             /* position: relative; */
+            height: 2000px;
+        }
+        .divclass2{
+            position: relative;
+            height: 2000px;
+        }
+        .pclass1{
+            position: absolute;
+        }
+        p{
+            border:1px solid black;
+        }
+        .img1{
+            /* position:relative ;
+            top: 100px;
+            left:200px; 
+
+            position: absolute;
+            top: 50px; */
+
+            position: sticky;
+            top: 50px;
+        }
+        .img2{
+            position: fixed;
+            /* left: 10px;
+            top:150px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="divclass1">
+        <img  src="1.jpeg" alt="">
+        <img  src="2.jpeg" alt="">
+        <img  src="3.jpeg" alt="">
+        <img class="img1" src="4.jpeg" alt="">
+        <img class="img2" src="5.jpeg" alt="">
+    </div>
+
+    <div class="divclass2">
+        <p >first try</p>
+        <p class="pclass1">second try</p>
+        <img src="bear.jpeg" alt="">
+    </div>
+
+    <p>jvsdlokjflods</p>
+</body>
+</html>

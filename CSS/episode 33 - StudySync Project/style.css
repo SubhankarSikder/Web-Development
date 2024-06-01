@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
+body{
+    height: 100vh;
+    text-align: center;
+    padding: 1rem;
+}
+.headerclass{
+    /* background-color: pink; */
+    width: 70%;
+    /* height: 30%; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.headerclass>header{
+    background-color: blue;
+    /* max-width: 70%; */
+}
+.iconBox{
+    display: flex;
+    gap: .5rem;
+}
+.iconBox>img{
+    max-width: 20px;
+    max-height: 25px;
+}
+.navBox{
+    display: flex;
+    gap: 1rem;
+}
+.navBox>a{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+    /* transform: color 2s; */
+}
+.navBox>a:hover{
+    color: rgb(16, 16, 222);
+}
+.contactButton{
+    border: none;
+    border-radius:0.375rem ;
+    background-color: rgb(42, 184, 254);
+    padding: .4rem;
+    color: white;
+    font-size: 1rem;
+}
+.contactButton:hover{
+    background-color: blue;
+}

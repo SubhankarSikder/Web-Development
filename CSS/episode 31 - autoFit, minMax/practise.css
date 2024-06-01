@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: pink;
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "gren gren gren redd"
+    "gren yello redd gren";
+    /* grid-template-areas: "green green green red"
+    "green yellow red green"
+    "green red yellow green"; */
+}
+.items{
+    border: 1px solid black;
+}
+#green{
+    /* width: 100px;
+    height: auto; */
+    width: 100px;
+    height: 100px;
+    grid-area: gren;
+    background-color: green;
+}
+#red{
+    width: 100px;
+    height: 100px;
+    grid-area: redd;
+    background-color: red;
+}
+#yellow{
+    width: 100px;
+    height: 100px;
+    grid-area: yello;
+    background-color: yellow;
+}

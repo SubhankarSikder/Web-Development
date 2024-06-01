@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: black;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+.box img{
+    width: 300px;
+    height: 130px;
+    /* background-color: black; */
+}
+.subBox{
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 0px 0px  10px 10px;
+}
+
+.mainPlan{
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 128, 255, 0.767);
+    border-radius: 5px;
+}
+.subPlan{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainPlan img{
+    width: 40px;
+    height: 30px;
+}
+.pClass{
+    font-weight: bold;
+}
+.subBox button{
+    width: 100%;
+    height: 35px;
+    background: rgb(3, 3, 72);
+    color: white;
+    border-radius: 5px;
+    box-shadow:0px 4px 5px rgba(0, 0, 0, 0.499);
+}
+
+#loremP{
+    width: 80%;
+    text-align: center;
+}
+
+@media(max-width:330px){
+    .mainPlan{
+        flex-direction: column;
+    }
+}

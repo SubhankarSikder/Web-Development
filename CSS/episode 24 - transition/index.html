@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            background-color: yellowgreen;
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: linear; */
+
+
+            /* short-hand notation */
+
+            transition: all 2s ease 0s;
+            /* transition: width 2s, height 5s, background-color 10s; */
+        }
+        .box:hover{
+            width: 600px;
+            background-color: palevioletred;
+            height: 500px;
+        }
+        .box p {
+            transition: all 3s linear;
+        }
+
+        .box:hover p:nth-child(1){
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        /* .box:focus{
+            width: 600px;
+            background-color: palevioletred;
+            height: 500px;
+        } */
+
+        
+
+        /* .box:hover p:last-child{
+            font-weight: bold;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, odio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque!</p>
+    </div>
+</body>
+</html>
